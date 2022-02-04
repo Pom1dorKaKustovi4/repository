@@ -8,7 +8,7 @@ def geocoder(address):
 
     geocoder_params = {
         "apikey": APIKEY,
-        "geocode": addres,
+        "geocode": address,
         "format": "json"}
 
     response = requests.get(geocoder_api_server, params=geocoder_params)

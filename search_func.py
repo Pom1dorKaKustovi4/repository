@@ -1,10 +1,9 @@
-import sys
 import requests
 import geocoder
 
 
-def search(text):
-    ll, spn = geocoder.get_ll_spn(" ".join(sys.argv[1:]))
+def search(toponym):
+    ll, spn = geocoder.get_ll_spn(toponym)
 
     map_params = {
         "ll": ll,
